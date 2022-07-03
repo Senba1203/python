@@ -1,0 +1,875 @@
+""" Write a program to read a number and print it.
+
+Input format
+The input consists of an integer.
+
+Output format
+The output prints the integer.
+
+Sample testcases
+Input 1
+484
+Output 1
+484 """
+#CODE:
+a= int (input (''))
+print(a)
+""" Write a program to read a string and print it.
+
+Input format
+The input consists of a string.
+
+Output format
+The output prints the string.
+
+Sample testcases
+Input 1
+Life is bliss
+Output 1
+Life is bliss"""
+#CODE:
+c=input("")
+print(c)
+"""Write a program to read a decimal value and print it.
+
+Input format
+The input consists of a float value.
+
+Output format
+The output prints the float value.
+
+Sample testcases
+Input 1
+48.2648
+Output 1
+48.2648
+Input 2
+36.25
+Output 2
+36.25
+Input 3
+88.888848
+Output 3
+88.888848"""
+#CODE
+c= float(input(''))
+print(c)
+"""Write a program to read a float value and round it off to two decimal places.
+
+Input format
+The input consists of a floating-point number.
+
+Output format
+The output prints the number.
+
+Note: Display two digits after the decimal point.
+
+Sample testcases
+Input 1
+84.4864
+Output 1
+84.49
+Input 2
+26.8624
+Output 2
+26.86 """
+#CODE1
+c=float(input (''))
+print(format(float(c),'.2f')) 
+#CODE2
+n = float(input())
+print("{:.2f}".format(n))
+"""This code is supposed to display "2 + 2 = 4" on the screen, but there is an error. Find the error in the code and fix it, so that the output is correct.
+
+Input format
+No console input.
+
+Output format
+The output prints the answer.
+
+Sample testcases
+Input 1
+Output 1
+2 + 2 = 4"""
+#CODE
+print("2 + 2 =" , (2 + 2))
+"""Write a program that accepts a sentence as input and prints the same.
+
+Input format
+The input consists of a sentence.
+
+Output format
+The output prints the sentence.
+
+Sample testcases
+Input 1
+make life ridiculously amazing
+Output 1
+make life ridiculously amazing"""
+#CODE
+s = input("")
+print(s)
+"""Raveena wants to welcome everyone who attends the Inauguration Ceremony. Given the name of the person, she needs to print the following message.
+
+ "Hi (name) , welcome to the inauguration ceremony"
+
+Input format
+The input consists of a string.
+
+Output format
+The output prints the custom message.
+
+Sample testcases
+Input 1
+alice
+Output 1
+Hi alice , welcome to the inauguration ceremony
+Input 2
+Raksha
+Output 2
+Hi Raksha , welcome to the inauguration ceremony"""
+#CODE
+n=input() 
+print('Hi',n ,", welcome to the inauguration ceremony") 
+"""Write a program to print the ASCII value of a given character.
+
+Input format
+The input consists of a character.
+
+Output format
+The output prints the ASCII value.
+
+Sample testcases
+Input 1
+k
+Output 1
+107
+Input 2
+U
+Output 2
+85"""
+#CODE
+c= input("")
+print(ord(c))
+"""Write a program to obtain and display the newly joined student name and age detail.
+
+Input format
+The first input is a string that corresponds to the name of the student
+
+The second input is an integer that corresponds to the age of the student
+
+Output format
+The output should display the details as given in the sample output.
+
+<name> age is <age>
+
+Sample testcases
+Input 1
+ram
+30
+Output 1
+ram age is 30"""
+#CODE
+name = input()
+age = int(input())
+print(name,"age is",age)
+"""Write a program to find the area of a rectangle.
+
+Input format
+Input consists of length and breadth separated by space
+
+Output format
+Output prints the area of the rectangle
+
+Sample testcases
+Input 1
+10
+2
+Output 1
+20"""
+#CODE
+length = int(input())
+breadth = int(input())
+print(length*breadth)
+"""Fill in the blanks so that the code prints 
+
+Output: Arise awake and stop not till the goal is reached
+
+Input format
+No console input.
+
+Output format
+The output prints the sentence.
+
+Sample testcases
+Input 1
+Output 1
+ Arise awake and stop not till the goal is reached"""
+ #CODE
+ word1 = " Arise"
+word2 = " stop not "
+word3 = " goal is "
+print( word1+ " awake and" +word2 + "till the" + word3 + "reached")
+"""This code is supposed to take two numbers, divide one by another so that the result is equal to 1, and display the result on the screen. Unfortunately, there is an error in the code. Find the error and fix it, so that the output is correct.
+
+Input format
+No console input.
+
+Output format
+The output prints 1.
+
+Sample testcases
+Input 1                                     Output 1
+                                               1.0      """
+#CODE
+numerator = 10
+denominator = 10
+result = numerator / denominator
+print(result)
+"""Write a Python script that outputs "Learning Python is fun!" to the screen.
+
+Input format
+No console input.
+
+Output format
+Output: Learning Python is fun!
+
+Sample testcases
+Input 1
+Output 1
+Learning Python is fun"""
+#CODE
+a='Learning Python is fun'
+print(a)
+"""Perform the task given in program comments.
+
+Input format
+No console input
+
+Output format
+The output prints the sentence.
+
+Sample testcases
+Input 1
+Output 1
+If you want to shine like a sun first burn like a sun
+"""
+#CODE
+print('If you want to shine like a sun first burn like a sun')
+"""Perform the task given in program comments.
+
+Input format
+No console input.
+
+Output format
+The output prints the speed rounded off to two decimal places.
+
+Sample testcases
+Input 1
+Output 1
+30.62"""
+#CODE
+distance=245
+time=8
+speed=distance/time
+print(format(float(speed),'.2f'))
+"""Write a program to work with arithmetic operators. (+,-,*,/,%)
+
+Input format
+The input consists of two integers.
+
+Output format
+The output prints the result of addition, subtraction, multiplication, division, and modulo.
+
+Refer to the sample input and output for formatting specifications.
+
+Sample testcases
+Input 1
+10
+15
+Output 1
+25
+-5
+150
+0.6666666666666666
+10
+Input 2
+10
+10
+Output 2
+20
+0
+100
+1.0
+0"""
+#CODE
+num1 = int(input())
+num2 = int(input())
+print(num1+num2)
+print(num1-num2)
+print(num1*num2)
+print(num1/num2)
+print(num1%num2)
+"""Write a program to swap two Integers using Bitwise Operators.
+
+Input format
+The input consists of two integers.
+
+Output format
+The output prints two numbers after swapping.
+
+Refer to the sample input and output for formatting specifications.
+
+Sample testcases
+Input 1
+12
+14
+Output 1
+14 12"""
+#CODE
+n1 = int(input())
+n2 = int(input())
+n1=n1^n2
+n2=n1^n2
+n1=n1^n2
+print(n1,n2)
+"""
+Write a program to work with bitwise operators(&,^).
+
+Input format
+The input consists of two integers.
+
+Output format
+The output prints the result of the relation between the input integers.
+
+Refer to the sample input and output for formatting specifications.
+
+Sample testcases
+Input 1
+50
+5
+Output 1
+0
+55
+Input 2
+10
+5
+Output 2
+0
+15"""
+#CODE
+num1 = int(input())
+num2 = int(input())
+a=num1&num2
+b=num1^num2
+print(a)
+print(b)
+"""Write a program to work with relational operators(>,>=,<,<=,==,!=).
+
+Input format
+The input consists of two integers.
+
+Output format
+The output prints the relation between the input integers.
+
+Refer to the sample input and output for formatting specifications.
+
+Sample testcases
+Input 1
+56
+79
+Output 1
+a is less than or equal to b
+a is lesser than b
+a is less than b
+a is lesser than or equal to b
+a and b are not equal
+a is not equal to b"""
+#CODE
+a = int(input())
+b = int(input())
+if (a>b):
+    print("a is greater than b")
+else:
+    print("a is less than or equal to b")
+  
+    
+if (a>=b):
+    print("a is greater than or equal to b")
+else:
+    print("a is lesser than b")
+  
+    
+if (a<b):
+    print("a is less than b")
+else:
+    print("a is greater than or equal to b")
+  
+    
+if (a<=b):
+    print("a is lesser than or equal to b")
+else:
+    print("a is greater than b")
+  
+    
+if (a == b):
+    print("a is equal to b")
+else:
+    print("a and b are not equal")
+  
+    
+if (a != b):
+    print("a is not equal to b")
+else:
+    print("a is equal b")
+"""Write a program demonstrating an example of the left shift (<<) operator.
+
+Note: Shift the number by 2
+
+Input format
+The input consists of an integer.
+
+Output format
+The output prints the result.
+
+Refer to the sample input and output for formatting specifications.
+
+Sample testcases
+Input 1
+145
+Output 1
+580"""
+#CODE
+num = int(input())
+print(num<<2)
+"""Write a program to exchange two variables.
+
+Input format
+The input consists of two numbers.
+
+Output format
+The output prints the exchanged numbers.
+
+Sample testcases
+Input 1
+3
+4
+Output 1
+4 """
+#CODE
+a=int(input())
+b=int(input())
+a=a^b
+b=a^b
+a=a^b
+print(a,b)
+"""CALCULATING GAIN PERCENTAGE
+
+Vikram buys an old scooter for Rs. A and spends Rs. B on its repairs. If he sells the scooter for Rs. C , what is his gain %?
+
+Write a program to compute the gain %.
+
+
+
+Output value should be displayed correct to 2 decimal places. (Use .2f method)
+
+Input format
+The first input is an integer which corresponds to Cost price. The second input is an integer which corresponds to repair cost. The third input corresponds to the Selling price.
+
+Output format
+Refer sample input and output for formatting specifications.
+
+The float values are displayed correct to 2 decimal places (Use .2f method)
+
+Sample testcases
+Input 1
+4700
+800
+5800
+Output 1
+5.45"""
+@CODE
+c=float(input())
+r=float(input())
+s=float(input())
+d=c+r
+e= (s-d) /d
+e= e*100
+print (format (e,'.2f')) 
+"""Two numbers A and B which are co-prime to each other are passed as input.The program must print the numbers with a hypen between A and B.
+
+Input format
+The first line input consist of an integer.
+
+The second line input consist of an integer.
+
+Output format
+Output prints the numbers with a hypen between A and B.
+
+Sample testcases
+Input 1
+2
+5
+Output 1
+2-5"""
+#CODE
+a=input()
+b=input()
+print(a+'-'+b)
+"""Bala distribute C chocolates to school N students every Friday.The C chocolate are distributed among N students equally and the remaining chocolates R are given back to Bala
+
+As an example if C=100 and N=40,each students receives 2 chocolates and the balance 100-40*2=20 is given back
+
+Input format
+The first line denotes C
+
+The second line denotes N
+
+Output format
+The first line denotes R-the number of chocolate to be given back
+
+Sample testcases
+Input 1
+300
+45
+Output 1
+30"""
+#CODE
+c=int(input())
+n=int(input())
+d=c//n
+a=c-(n*d)
+print(a)
+"""Given 2 numbers N,K print the number after performing right shift 'K' times of number N.
+
+Input Size : 1 <= N, K <= 1000.
+
+Input format
+First line of input contains integer N
+
+Second line of input contains integer K
+
+Output format
+Output prints the Kth right shift of value N.
+
+Sample testcases
+Input 1
+5 
+2
+Output 1
+1
+Input 2
+9 
+1
+Output 2
+4"""
+#CODE
+n=int(input())
+k=int(input())
+print(n>>k)
+"""Write a Python program to convert temperatures to and from celsius, Fahrenheit.
+
+Input format
+The input should be either Celcius or Fahrenheit temperature followed by 'f/F' or 'c/C'.
+
+(Refer Sample Input)
+
+Output format
+The output prints the conversion of temperatures as per the input.
+
+(Refer Sample Output)
+
+Sample testcases
+Input 1
+104
+C
+Output 1
+The temperature in Fahrenheit is 219 degrees."""
+#CODE
+temp=int(input())
+a="Fahrenheit"
+b="Celsius"
+n=input() 
+if(n=='C'):
+    f=(temp*9//5)+32
+    print("The temperature in",a,"is",f,"degrees.")
+else: 
+    if(temp>0 and n=='F'):
+        c=int(round(temp-32)*5/9) 
+        print("The temperature in",b,"is",c,"degrees.")
+"""Write a Python program to calculate a dog's age in a dog's years.
+
+Note: For the first two years, a dog year is equal to 10.5 human years. After that, each dog year equals 4 human years
+
+Input format
+The input should be an integer representing the dog's age.
+
+Output format
+The output prints the dog's age in the dog's years.
+
+Sample testcases
+Input 1
+11
+Output 1
+The dog's age in dog's years is 57
+"""
+#CODE
+age=int(input())
+if(age<=2):
+    dog=age*10.5
+    print("The dog's age in dog's years is",dog)
+elif(age>2):
+    dog=21+((age-2)*4)
+    print("The dog's age in dog's years is",dog)
+"""Write a Python program to check whether an alphabet is a vowel or consonant.
+
+Input format
+The input consists of a string element representing an alphabet of English letters.
+
+Output format
+The output prints if the input string element is a vowel or a consonant.
+
+Sample testcases
+Input 1
+a
+Output 1
+a is a vowel.
+Input 2
+c
+Output 2
+c is a consonant.
+"""
+#CODE
+char=input()
+if char in ('A','E','I','O','U','a','e','i','o','u'):
+    print(char,"is a vowel.")
+else:
+    print(char,"is a consonant.")
+"""Write a Python program to convert the month name to a number of days.
+
+Input format
+Input consists of a string representing the name of the month.
+
+Output format
+The output prints the number of days present in the input month. (If month name won't be valid, it will print "Wrong month name")
+
+(Refer Sample output)
+
+Sample testcases
+Input 1
+March
+Output 1
+31 days
+Input 2
+February
+Output 2
+28/29 days
+Input 3
+Apr
+Output 3
+Wrong month name"
+#CODE
+m=input()
+if m in('February'):
+    print("28/29 days")
+elif m in ('January','March','May','July','August','October','December'):
+    print("31 days")
+elif m in ('April','June','September','November')  :
+    print("30 days")
+else:
+    print("Wrong month name")
+"""Write a Python program to check a triangle is equilateral, isosceles or scalene.
+
+Note :
+
+An equilateral triangle is a triangle in which all three sides are equal.
+
+A scalene triangle is a triangle that has three unequal sides.
+
+An isosceles triangle is a triangle with (at least) two equal sides.
+
+Input format
+The input consists of 3 integers representing the three sides of the triangle.
+
+Output format
+The output prints if the triangle is an Equilateral, Isosceles, or Scalene triangle.
+
+Sample testcases
+Input 1
+12
+12
+12
+Output 1
+Equilateral triangle
+"""
+#CODE
+a=int(input())
+b=int(input())
+c=int(input())
+if(a==b and a==c):
+    print("Equilateral triangle")
+elif(a!=b and a!=c):
+    print("Scalene triangle")
+else:
+    print("Isosceles triangle")
+"""
+Write a program to accept a coordinate point in an XY coordinate system and determine in which quadrant the coordinate point lies.
+
+Input format
+The first line of input consists of two Integers representing the X and Y value of the point.
+
+Output format
+The output prints the coordinate of the point.
+
+Refer to the sample input and output for formatting specifications.
+
+Sample testcases
+Input 1
+1
+2
+Output 1
+The coordinate point lies in the first quandrant.
+Input 2
+0
+0
+Output 2
+The coordinate point lies at the origin."""
+#CODE
+co1 = int(input())
+co2 = int(input())
+if(co1>0 and co2>0):
+    print("The coordinate point lies in the first quandrant.")
+elif(co1<0 and co2>0):
+    print("The coordinate point lies in the second quandrant.")
+elif( co1<0 and co2< 0):
+    print("The coordinate point lies in the third quandrant.")
+elif( co1>0 and co2<0):
+   print("The coordinate point lies in the fourth quandrant.")
+elif(co1==0 and co2==0):
+    print("The coordinate point lies at the origin.")
+"""Write a program to accept a person's height in centimeters and categorize the person according to their height.
+
+If the height is less than 150cm, then the person is a Dwarf.
+
+If the height of the person is greater than or equal to 150cm and less than 165cm, then the person is of average height.
+
+If the height of the person is greater than or equal to 165cm and less than or equal to 195cm, then the person is taller.
+
+Else, abnormal height.
+
+Input format
+The input consists of the height in centimeters.
+
+Output format
+The output prints the category.
+
+Sample testcases
+Input 1
+135
+Output 1
+The person is Dwarf.
+Input 2
+150
+Output 2
+The person is average heighted.
+Input 3
+165
+Output 3
+The person is taller.
+Input 4
+195
+Output 4
+The person is taller.
+Input 5
+200
+Output 5
+Abnormal height."""
+#CODE
+PerHeight = float(input())
+if(PerHeight<150):
+    print("The person is Dwarf.")
+elif(PerHeight>=150 and PerHeight<165):
+    print("The person is average heighted.")
+elif(PerHeight>=165 and PerHeight<=195):
+    print("The person is taller.")
+else:
+    print("Abnormal height.")
+"""Write a program to print the multiplication table of a given number.
+
+Input format
+The input consists of a number.
+
+Output format
+The output prints the table.
+
+Sample testcases
+Input 1
+5
+Output 1
+5 * 1 = 5
+5 * 2 = 10
+5 * 3 = 15
+5 * 4 = 20
+5 * 5 = 25
+5 * 6 = 30
+5 * 7 = 35
+5 * 8 = 40
+5 * 9 = 45
+5 * 10 = 50"""
+#CODE
+num = int(input())
+for i in range(1,11): 
+    m=num*i
+    print(num,"*",i,"=",m)
+"""Write a program to find the sum of the GP series.
+
+Input format
+The input consists of the first number in the GP series, the number of terms in the GP series, and the common ratio of the GP series.
+
+Output format
+The output prints the sum of the GP series.
+
+Sample testcases
+Input 1
+3
+5
+2
+Output 1
+93.0"""
+#CODE
+sum1 = 0
+g1 = float(input())
+nterm = float(input())
+cr = float(input())
+a=((cr**nterm)-1) 
+b=g1*a
+sum1= b/(cr-1)
+print(sum1)
+"""Write a program to display the sum of the series [ 9 + 99 + 999 + 9999 ...].
+
+Input format
+The input consists of the value of n that represents the number of terms.
+
+Output format
+The output prints the sum.
+
+Sample testcases
+Input 1
+5
+Output 1
+9
+99
+999
+9999
+99999
+111105
+"""
+#CODE
+n = int(input())
+sum1 = 0
+t = 9
+for i in range (1,n+1):
+      sum1=t+sum1
+      print(t) 
+      t=(t*10)+9
+print(sum1)
