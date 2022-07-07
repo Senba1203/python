@@ -1,0 +1,944 @@
+1.Find the maximum length word in a given sentence and return the maximum-length word. If multiple words are of the same length return the first occurring word of maximum length.
+
+Input format
+The input contains a sentence whose maximum-length word needs to be determined.
+
+Output format
+The output displays a word from the given sentence whose length is maximum.
+
+Sample testcases
+Input 1
+Prabhu and Keerthi are good at cycling
+Output 1
+Keerthi
+Input 2
+Python is a powerful programming language
+Output 2
+programming
+Input 3
+Trees provides oxygen
+Output 3
+provides
+Input 4
+I am good
+Output 4
+good
+CODE:
+n=[i for i in input().split(" ")]
+a=0
+for i in n:
+    if(len(i)>a):
+        a=len(i)
+        b=i
+print (b)  
+2.Given a sentence interchange the words around the word 'and'.
+
+Input format
+The input contains a sentence
+
+Output format
+The output contains a sentence with words are interchanged between 'and'
+
+Sample testcases
+Input 1
+jack and jill went up and down to get water
+Output 1
+jill and jack went down and up to get water
+Input 2
+a and e i are vowels. b and c are consonants
+Output 2
+e and a i are vowels. c and b are consonants
+Input 3
+Ramu and Raju are friends
+Output 3
+Raju and Ramu are friends
+Input 4
+Be always energetic and determined to achieve your goals.
+Output 4
+Be always determined and energetic to achieve your goals.
+Input 5
+I am good and how are you?
+Output 5
+I am how and good are you?
+CODE:
+a=[i for i in input().split()]
+for i in range(len(a)):
+    if(a[i]=="and"):
+        temp=a[i+1]
+        a[i+1]=a[i-1]
+        a[i-1]=temp
+    if(a[i]==a[i-3]):
+        pass
+for i in a:
+    print(i,end=" ")
+3.Write a program to move all the upper case letters to end and lower case letters to begin in the given string.
+
+Input format
+String in the first line.
+
+Output format
+Modified string as per requirement.
+
+Sample testcases
+Input 1
+WelcomeTOPlacement
+Output 1
+elcomelacementWTOP
+Input 2
+IfYourSmartphoneSeemsMoreLikeASlowphoneHangInThere
+Output 2
+fourmartphoneeemsoreikelowphoneangnhereIYSSMLASHIT
+Input 3
+SoWhatGoodnessWill4gBringToTheWorldAndShouldYouHoldYourBreathForIt
+Output 3
+ohatoodnessillgringoheorldndhouldouoldourreathortSWGWBTTWASYHYBFI
+Input 4
+IamGood
+Output 4
+amoodIG
+Input 5
+WelcometoourFamily
+Output 5
+elcometoouramilyWF
+CODE:
+n=input ()
+a=list(n)
+b=[]
+c=[]
+for i in a:
+    if(i.islower()==True):
+        b.append(i)
+    if(i.isupper()==True):
+        c.append(i)
+for i in b:
+    print(i, end="")
+for i in c:
+    print (i,end="")
+4.A string S is passed as the input. The program must print the number of articles in S.
+
+The string S passed as the input need not be correct grammatically.
+
+Note:
+
+Articles are "a", "an" and "the".
+
+Input format
+The first line of input consists of a string S.
+
+Output format
+The output will contain the number of articles present in S.
+
+Sample testcases
+Input 1
+the lion is back
+Output 1
+1
+Input 2
+According to Shuvro Sarker, since the 1950s and particularly since the 1990s, the Indian and, governments under various political parties have An studied and drafted laws for the naturalization of refugees and asylum seekers.A These drafts have struggled with issues relating to a mass influx of refugees, urban planning, cost of basic services, the obligations to protected tribes, the impact on pre-existing regional poverty levels within India.
+Output 2
+8
+Input 3
+The year before the 2016 elections, the government legalised refugees belonging to religious minorities from Pakistan and Bangladesh, granting them long-term visas. Bangladeshi and Pakistani nationals belonging to "minority communities" were exempted from the requirements of the Passport (Entry into India) Act, 1920 and the Foreigners Act, 1946.[55] Specifically mentioned were "Hindus, Sikhs, Christians, Jains, Parsis and Buddhists," who had been "compelled to seek shelter in India due to religious persecution or fear of religious persecution".
+Output 3
+6
+Input 4
+The sun rises in the east.
+Output 4
+2
+Input 5
+There is a house in front.
+Output 5
+1
+CODE:
+a=input().split()
+c=0
+for i in a:
+   if (i=="a" or i=="A"):
+      c=c+1
+   if(i=="an" or i=="An"):
+        c=c+1  
+   if(i=="the" or i=="The"):
+       c=c+1
+print(c)
+5.Write a program that inserts a white space between every instance of a lower character followed immediately by an upper character.
+
+Input format
+The input contains a string.
+
+Output format
+The output displays the list of strings separated by spaces.
+
+Sample testcases
+Input 1
+TheSunRisesInTheEast
+Output 1
+The Sun Rises In The East
+Input 2
+MarvinTalksTooMuch
+Output 2
+Marvin Talks Too Much
+Input 3
+TheGreatestUpsetInHistory
+Output 3
+The Greatest Upset In History
+Input 4
+IamGood
+Output 4
+Iam Good
+Input 5
+EnjoyingTheDays
+Output 5
+Enjoying The Days
+CODE:
+a=input()
+b=[]
+for i in a:
+    if(i.isupper()==True):
+        print(" "+i,end="")
+    if(i.islower()==True):
+        print(i, end="")
+ 6.Write a program to reverse the letters given in each word of a string without reversing the entire string.
+
+Input format
+The input consists of a string.
+
+Output format
+The output prints the resultant string.
+
+Sample testcases
+Input 1
+good morning
+Output 1
+doog gninrom
+Input 2
+hello world
+Output 2
+olleh dlrow
+Input 3
+actions speak louder than words
+Output 3
+snoitca kaeps reduol naht sdrow
+Input 4
+All the best
+Output 4
+llA eht tseb
+Input 5
+illness can be cure
+Output 5
+ssenlli nac eb eruc
+CODE:
+n=input ().split ()
+a=list(n)
+for i in a:
+    print(i[::-1],end=" ")
+ 7.Write a program to count the repeated characters in a given string.
+
+Input format
+The input consists of a string.
+
+Output format
+The output prints the count of repeated characters in the string.
+
+Sample testcases
+Input 1
+thequickbrownfoxjumpsoverthelazydog
+Output 1
+t 2
+h 2
+e 3
+u 2
+r 2
+o 4
+Input 2
+aliceinwonderland
+Output 2
+a 2
+l 2
+i 2
+e 2
+n 3
+d 2
+Input 3
+malayalam
+Output 3
+m 2
+a 4
+l 2
+Input 4
+Are you ok?
+Output 4
+o 2
+Input 5
+We are the best
+Output 5
+e 4
+t 2
+CODE:
+a=input()
+b=[]
+for i in a:
+   if(i!=" "):
+    c=a.count(i)
+    if(c>1):
+        if(i not in b):
+         print(i,c)
+         b.append (i)
+8. Write a program to get a single string from two given strings, and swap the first two characters of each string.
+
+Input format
+The input consists of two strings.
+
+Output format
+The output prints the string after swapping.
+
+Sample testcases
+Input 1
+abc 
+xyz
+Output 1
+xyc  abz
+Input 2
+apple
+mango
+Output 2
+maple apngo
+Input 3
+green
+orange
+Output 3
+oreen grange
+Input 4
+orange 
+tree
+Output 4
+trange  oree
+Input 5
+few 
+them
+Output 5
+thw  feem
+CODE:
+a=input()
+b=input()
+d=b[:2]+a[2:]
+e=a[:2]+b[2:]
+print (d+" "+e)
+9.Write a program to sort the letters in a given string.
+
+Input format
+The input consists of a string.
+
+Output format
+The output prints the sorted string.
+
+Sample testcases
+Input 1
+fedcba
+Output 1
+The original string : fedcba
+String after sorting : abcdef
+Input 2
+astounded
+Output 2
+The original string : astounded
+String after sorting : addenostu
+Input 3
+computer
+Output 3
+The original string : computer
+String after sorting : cemoprtu
+Input 4
+umbrella
+Output 4
+The original string : umbrella
+String after sorting : abellmru
+Input 5
+choreography
+Output 5
+The original string : choreography
+String after sorting : aceghhooprry
+CODE:
+test_string = input()
+print("The original string : " + str(test_string))
+t=list(test_string)
+res=sorted(t)
+print("String after sorting :","".join(res))
+10.Write a program to extract a substring from a given string.
+
+Extract the first two characters and from the third character.
+
+Input format
+The first line of the input consists of a string.
+
+Output format
+The output prints the substring.
+
+Sample testcases
+Input 1
+wonderland
+Output 1
+wonderland
+wo
+derland
+Input 2
+pineapple
+Output 2
+pineapple
+pi
+eapple
+Input 3
+jackfruit
+Output 3
+jackfruit
+ja
+kfruit
+Input 4
+apple
+Output 4
+apple
+ap
+le
+Input 5
+coconut
+Output 5
+coconut
+co
+onut
+CODE:
+ini_string = input()
+print (ini_string)
+sstring_strt = ini_string [:2]
+sstring_end =ini_string [3:]
+print (sstring_strt)
+print (sstring_end)
+11.Write a program to check whether the given input is a character, digit, or special character.
+
+Input format
+The input consists of a character.
+
+Output format
+The output prints whether the input is a character, digit, or special character.
+
+Sample testcases
+Input 1
+K
+Output 1
+K is a ALPHABET.
+Input 2
+w
+Output 2
+w is a ALPHABET.
+Input 3
+$
+Output 3
+$ is a SPECIAL CHARACTER.
+Input 4
+2
+Output 4
+2 is a DIGIT.
+Input 5
+H
+Output 5
+H is a ALPHABET.
+CODE:
+ch = input()
+if(ch[0].isalpha()) :
+    print(ch[0], "is a ALPHABET.")
+elif(ch[0].isdigit()) :
+    print( ch[0], "is a DIGIT.")
+else :
+    print( ch[0], "is a SPECIAL CHARACTER.")
+12.Write a program to check whether the given character is lowercase or uppercase.
+
+Input format
+The input consists of a character.
+
+Output format
+The output prints whether the given character is lowercase or uppercase.
+
+Sample testcases
+Input 1
+a
+Output 1
+a is a lowercase letter
+Input 2
+b
+Output 2
+b is a lowercase letter
+Input 3
+Z
+Output 3
+Z is a uppercase letter
+Input 4
+h
+Output 4
+h is a lowercase letter
+Input 5
+O
+Output 5
+O is a uppercase letter
+CODE:
+ch = input()
+if(ch.islower()==True):
+    print(ch,"is a lowercase letter")
+else:
+    print(ch,"is a uppercase letter")
+13.Write a python program to change a given string to a new string where the first and last chars have been exchanged.
+
+Input format
+The input consists of a string.
+
+Output format
+The output prints the modified string.
+
+Sample testcases
+Input 1
+wonderland
+Output 1
+donderlanw
+Input 2
+vituperative
+Output 2
+eituperativv
+Input 3
+marshmellow
+Output 3
+warshmellom
+Input 4
+umbrella
+Output 4
+ambrellu
+Input 5
+choreography
+Output 5
+yhoreographc
+CODE 1:
+str1 = input()
+a=str1[-1]
+b=str1[0]
+c=a+str1[1:len(str1)-1]+b
+print(c)
+CODE 2 :
+str1 = input()
+print(str1[-1:] + str1[1:-1] + str1[:1])
+14.Write a program to obtain a string and replace every ab by xy.
+
+Input format
+The input consists of a string.
+
+Output format
+The output prints the modified string.
+
+Sample testcases
+Input 1
+ababcabcd
+Output 1
+xyxycxycd
+Input 2
+abcabcdabcde
+Output 2
+xycxycdxycde
+Input 3
+ababababa
+Output 3
+xyxyxyxya
+Input 4
+abababab
+Output 4
+xyxyxyxy
+Input 5
+about
+Output 5
+xyout
+CODE:
+import re
+txt = input()
+a=re.sub("ab","xy",txt,0)
+print(a)
+15.Given a string as input, split the string based on the whitespace character.
+
+Input format
+The input consists of a string.
+
+Output format
+The output prints the list.
+
+Refer sample output.
+
+Sample testcases
+Input 1
+live like laugh
+Output 1
+['live', 'like', 'laugh']
+Input 2
+actions speak louder than words
+Output 2
+['actions', 'speak', 'louder', 'than', 'words']
+Input 3
+talk less work more
+Output 3
+['talk', 'less', 'work', 'more']
+Input 4
+sun rises in the east
+Output 4
+['sun', 'rises', 'in', 'the', 'east']
+Input 5
+Be kind
+Output 5
+['Be', 'kind']
+CODE 1:
+txt = input().split()
+x=list(txt)
+print(x)
+CODE 2:
+import re
+txt = input()
+x = re.split("\s", txt)
+print(x)
+16.Write a program to obtain a string and replace every a by e.
+
+Input format
+The input consists of a string.
+
+Output format
+The output prints the modified string.
+
+Sample testcases
+Input 1
+application
+Output 1
+epplicetion
+Input 2
+applied
+Output 2
+epplied
+Input 3
+apple
+Output 3
+epple
+Input 4
+abaaabab
+Output 4
+ebeeebeb
+Input 5
+artificial
+Output 5
+ertificiel
+CODE:
+import re
+txt = input()
+a=re.sub("a","e",txt,0)
+print(a)
+17.Write a program to search for a substring in a given string.
+
+Input format
+The input consists of the string and the substring.
+
+Output format
+The output prints the starting position at which the substring is present.
+
+Sample testcases
+Input 1
+Wonderland
+land
+Output 1
+6
+Input 2
+live like laugh
+laugh
+Output 2
+10
+Input 3
+actions speak louder than words
+words
+Output 3
+26
+Input 4
+Delhi is the capital of India.
+of
+Output 4
+21
+Input 5
+Google is the trending web browser.
+web
+Output 5
+23
+CODE 1:
+import re
+txt = input()
+pat = input()
+b=re.finditer(pat,txt)
+for i in b:
+    print(i.start())
+CODE 2:
+import re
+txt = input()
+pat = input()
+pos = re.search(pat,txt)
+print(pos.start())
+18.Given a text and a pattern, Write a program to find all the occurrences of the pattern in the text.
+
+Input format
+The input consists of the text and the pattern.
+
+Output format
+The output prints the occurrences of the pattern in the text.
+
+Sample testcases
+Input 1
+The rain in Spain
+ai
+Output 1
+['ai', 'ai']
+Input 2
+an apple a day keeps the doctor away
+a
+Output 2
+['a', 'a', 'a', 'a', 'a', 'a']
+Input 3
+sun rises in the east
+in
+Output 3
+['in']
+Input 4
+Always stay determined and motivated.
+ay
+Output 4
+['ay', 'ay']
+Input 5
+Keep growing
+ow
+Output 5
+['ow']
+CODE 1:
+import re
+txt = input()
+pat = input()
+c=re.findall(pat,txt)
+x=[]
+for i in c:
+    x.append(i)
+print(x)
+CODE 2:
+import re
+txt = input()
+pat = input()
+x = re.findall(pat, txt)
+print(x)
+19.Given a string, the task is to extract all the numbers from a string and find out the most occurring number in it.
+
+’T’ is the number of test cases and the input string is fetched during run-time.
+
+If the count for two numbers  is   same then display the smallest  number .If the string does not have any numbers then display "String has no numbers".
+Example:
+drfghj55of55gee4ksabc3dr2x
+55
+It must extract the number   as 55 and count its frequency in the string and not as a digit 5.
+Sample testcases
+Input 1
+3
+hjfnfkk60njjk55njj60jj55bjhjj4jjj5
+ubjj44bjbj44bhbj5vhh44vh3ghb6hj
+ghhbhjg30gjj30jhj30guhhhu3uhh0j
+Output 1
+55
+44
+30
+Input 2
+1
+bdhid4545jbj44fdkdf44smlm44sjx
+Output 2
+44
+CODE:
+import re
+n=int(input ())
+b=[]
+max=0
+val=0
+for i in range (n):
+    a=input ()
+    n=re.findall("[0-9]+",a)
+    for i in n:
+        x=n.count(i)
+        if(x>=max):
+            max=x
+            val=i
+            i=-1
+        
+    print(val)
+20.Given two strings where first string may contain wild card characters and second string is a normal string.
+
+
+
+Write a function that returns TRUE if the two strings match. 
+
+The following are allowed wild card characters in first string.
+
+The first line contains the wildcard characters and the second line of input contains the normal string .
+
+
+
+* --> Matches with 0 or more instances of any character or set of characters.
+
+? --> Matches with any one character.
+
+
+
+Sample testcases
+Input 1
+*pqrs
+pqrst
+Output 1
+FALSE
+Input 2
+abc*bcd
+abcdhghgbcd
+Output 2
+TRUE
+Input 3
+abc*c?d
+abcd
+Output 3
+FALSE
+CODE:
+import re
+a=input()
+b=input()
+c=re.findall("[*?]",a)
+d=re.findall("[*?]",b)
+e=c.count("*")
+m=len(c)
+n=len(d)
+if(m==0 and n==0):
+    print("TRUE")
+elif(a[0]=="*"):
+    print("FALSE")
+elif(a[0]!="*"):
+    if(m!=e and n==0):
+        print("FALSE")
+    else:
+        print("TRUE")
+21.Given a string, the task is to check if the string contains any alphabet ‘g’ followed by one or more ‘e’s in it.If present then display the string otherwise, print No match. ’T’ is the number of test cases and the input is fetched during run-time.
+
+Sample testcases
+Input 1
+2
+archana
+geetha
+Output 1
+No match
+geetha
+Input 2
+2
+geeram
+greeshma
+Output 2
+geeram
+No match
+CODE:
+import re
+n=int(input ())
+for i in range (n):
+   a=input ()
+   pat="ge{1}"
+   if(re.match(pat, a)):
+       print(a)
+   else:
+       print("No match")
+ 22.Write a python program to reverse a string.
+
+Input format
+Input consists of a string.
+
+Output format
+Output prints the reversed string.
+
+Sample testcases
+Input 1
+hello world
+Output 1
+dlrow olleh
+Input 2
+Colgate
+Output 2
+etagloC
+Input 3
+apple
+Output 3
+elppa
+Input 4
+coimbatore
+Output 4
+erotabmioc
+Input 5
+goodwill
+Output 5
+lliwdoog
+CODE:
+n=input(). split()
+n=list(n)
+n=n[::-1]
+for i in n:
+    print(i[::-1],end=" ")
+ 23.Write a python program to count the frequency of words appearing in a string.
+
+Input format
+Input consists of a sentence (space-separated words or a string ).
+
+Output format
+The output consists of the frequency of each word in the sentence in described format.
+
+Sample testcases
+Input 1
+aero electric electric computer aero nautic nautic computer latent
+Output 1
+Frequency of aero is 2
+Frequency of electric is 2
+Frequency of computer is 2
+Frequency of nautic is 2
+Frequency of latent is 1
+Input 2
+Stay hungry Stay foolish
+Output 2
+Frequency of Stay is 2
+Frequency of hungry is 1
+Frequency of foolish is 1
+Input 3
+Stay awake Stay focused
+Output 3
+Frequency of Stay is 2
+Frequency of awake is 1
+Frequency of focused is 1
+Input 4
+Enjoy life and Enjoy to the fullest
+Output 4
+Frequency of Enjoy is 2
+Frequency of life is 1
+Frequency of and is 1
+Frequency of to is 1
+Frequency of the is 1
+Frequency of fullest is 1
+Input 5
+World look good to you when you do good for others.
+Output 5
+Frequency of World is 1
+Frequency of look is 1
+Frequency of good is 2
+Frequency of to is 1
+Frequency of you is 2
+Frequency of when is 1
+Frequency of do is 1
+Frequency of for is 1
+Frequency of others. is 1
+CODE:
+n=input (). split ()
+n=list(n)
+d=[]
+for i in n:
+    c=n.count(i)
+    if(i not in d):
+      print ("Frequency of",i,"is",c)
+      d.append (i)
+
+      
+   
